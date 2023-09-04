@@ -2,699 +2,677 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VAST - Make an Impression & Drive More Downloads With VAST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
 </head>
 
-<body id="top">
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
 
-  <!-- 
-    - #HEADER
-  -->
+                        <li class="sidebar-item active ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
 
-  <header class="header" data-header>
-    <div class="container">
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-stack"></i>
+                                <span>Components</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="component-alert.html">Alert</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-badge.html">Badge</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-breadcrumb.html">Breadcrumb</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-button.html">Button</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-card.html">Card</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-carousel.html">Carousel</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-dropdown.html">Dropdown</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-list-group.html">List Group</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-modal.html">Modal</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-navs.html">Navs</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-pagination.html">Pagination</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-progress.html">Progress</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-spinner.html">Spinner</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-tooltip.html">Tooltip</a>
+                                </li>
+                            </ul>
+                        </li>
 
-      <a href="#" class="logo">VAST</a>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-collection-fill"></i>
+                                <span>Extra Components</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="extra-component-avatar.html">Avatar</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-sweetalert.html">Sweet Alert</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-toastify.html">Toastify</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-rating.html">Rating</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-divider.html">Divider</a>
+                                </li>
+                            </ul>
+                        </li>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list container">
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Layouts</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="layout-default.html">Default Layout</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="layout-vertical-1-column.html">1 Column</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="layout-vertical-navbar.html">Vertical with Navbar</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="layout-horizontal.html">Horizontal Menu</a>
+                                </li>
+                            </ul>
+                        </li>
 
-          <li>
-            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
-          </li>
+                        <li class="sidebar-title">Forms &amp; Tables</li>
 
-          <li>
-            <a href="#features" class="navbar-link" data-nav-link>Features</a>
-          </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-hexagon-fill"></i>
+                                <span>Form Elements</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="form-element-input.html">Input</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-input-group.html">Input Group</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-select.html">Select</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-radio.html">Radio</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-checkbox.html">Checkbox</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-textarea.html">Textarea</a>
+                                </li>
+                            </ul>
+                        </li>
 
-          <li>
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
-          </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical-fill"></i>
+                                <span>Form Layout</span>
+                            </a>
+                        </li>
 
-          <li>
-            <a href="#app" class="navbar-link" data-nav-link>App</a>
-          </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pen-fill"></i>
+                                <span>Form Editor</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="form-editor-quill.html">Quill</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-editor-ckeditor.html">CKEditor</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-editor-summernote.html">Summernote</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-editor-tinymce.html">TinyMCE</a>
+                                </li>
+                            </ul>
+                        </li>
 
-          <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li>
+                        <li class="sidebar-item  ">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Table</span>
+                            </a>
+                        </li>
 
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>Contact</a>
-          </li>
+                        <li class="sidebar-item  ">
+                            <a href="table-datatable.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Datatable</span>
+                            </a>
+                        </li>
 
-          <li>
-            <a href="#" class="btn btn-primary">Get Started</a>
-          </li>
+                        <li class="sidebar-title">Extra UI</li>
 
-        </ul>
-      </nav>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pentagon-fill"></i>
+                                <span>Widgets</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-widgets-chatbox.html">Chatbox</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-widgets-pricing.html">Pricing</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-widgets-todolist.html">To-do List</a>
+                                </li>
+                            </ul>
+                        </li>
 
-      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-egg-fill"></i>
+                                <span>Icons</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-icons-bootstrap-icons.html">Bootstrap Icons </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-icons-fontawesome.html">Fontawesome</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-icons-dripicons.html">Dripicons</a>
+                                </li>
+                            </ul>
+                        </li>
 
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <span>Charts</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-chart-chartjs.html">ChartJS</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-chart-apexcharts.html">Apexcharts</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="ui-file-uploader.html" class='sidebar-link'>
+                                <i class="bi bi-cloud-arrow-up-fill"></i>
+                                <span>File Uploader</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-map-fill"></i>
+                                <span>Maps</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-map-google-map.html">Google Map</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-map-jsvectormap.html">JS Vector Map</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">Pages</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-email.html" class='sidebar-link'>
+                                <i class="bi bi-envelope-fill"></i>
+                                <span>Email Application</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-chat.html" class='sidebar-link'>
+                                <i class="bi bi-chat-dots-fill"></i>
+                                <span>Chat Application</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-gallery.html" class='sidebar-link'>
+                                <i class="bi bi-image-fill"></i>
+                                <span>Photo Gallery</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-checkout.html" class='sidebar-link'>
+                                <i class="bi bi-basket-fill"></i>
+                                <span>Checkout Page</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-person-badge-fill"></i>
+                                <span>Authentication</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="auth-login.html">Login</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="auth-register.html">Register</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="auth-forgot-password.html">Forgot Password</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-x-octagon-fill"></i>
+                                <span>Errors</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="error-403.html">403</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="error-404.html">404</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="error-500.html">500</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">Raise Support</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="https://zuramai.github.io/mazer/docs" class='sidebar-link'>
+                                <i class="bi bi-life-preserver"></i>
+                                <span>Documentation</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="https://github.com/zuramai/mazer/blob/main/CONTRIBUTING.md" class='sidebar-link'>
+                                <i class="bi bi-puzzle"></i>
+                                <span>Contribute</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="https://github.com/zuramai/mazer#donate" class='sidebar-link'>
+                                <i class="bi bi-cash"></i>
+                                <span>Donate</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <h3>Profile Statistics</h3>
+            </div>
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon purple">
+                                                    <i class="iconly-boldShow"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Profile Views</h6>
+                                                <h6 class="font-extrabold mb-0">112.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon blue">
+                                                    <i class="iconly-boldProfile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Followers</h6>
+                                                <h6 class="font-extrabold mb-0">183.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon green">
+                                                    <i class="iconly-boldAdd-User"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Following</h6>
+                                                <h6 class="font-extrabold mb-0">80.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon red">
+                                                    <i class="iconly-boldBookmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Saved Post</h6>
+                                                <h6 class="font-extrabold mb-0">112</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chart-profile-visit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-xl-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-primary" width="32" height="32" fill="blue"
+                                                        style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">Europe</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">862</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-europe"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-success" width="32" height="32" fill="blue"
+                                                        style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">America</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">375</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-america"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-danger" width="32" height="32" fill="blue"
+                                                        style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">Indonesia</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">1025</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-indonesia"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Latest Comments</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-lg">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Comment</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/5.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Congratulations on your graduation!</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/2.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Wow amazing design! Can you make another
+                                                                tutorial for
+                                                                this design?</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <div class="card-body py-4 px-5">
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar avatar-xl">
+                                        <img src="assets/images/faces/1.jpg" alt="Face 1">
+                                    </div>
+                                    <div class="ms-3 name">
+                                        <h5 class="font-bold">John Duck</h5>
+                                        <h6 class="text-muted mb-0">@johnducky</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Recent Messages</h4>
+                            </div>
+                            <div class="card-content pb-4">
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/4.jpg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">Hank Schrader</h5>
+                                        <h6 class="text-muted mb-0">@johnducky</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/5.jpg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">Dean Winchester</h5>
+                                        <h6 class="text-muted mb-0">@imdean</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/1.jpg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">John Dodol</h5>
+                                        <h6 class="text-muted mb-0">@dodoljohn</h6>
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <button class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>Start
+                                        Conversation</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Visitors Profile</h4>
+                            </div>
+                            <div class="card-body">
+                                <div id="chart-visitors-profile"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 &copy; Mazer</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
-  </header>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
 
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero" aria-label="hero" id="home">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">Best Mobile App 12 day free</p>
-
-            <h1 class="h1 hero-title">Make an Impression & Drive More Downloads With VAST</h1>
-
-            <p class="section-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu ut labore et
-              dolore magna
-              aliqua. Ut enim ad minim veniamquis nostrud
-            </p>
-
-            <ul class="btn-list">
-
-              <li>
-                <a href="#" class="btn-item-link" aria-label="Download from app store">
-                  <img src="./assets/images/app-store.png" width="185" height="69" alt="app store" class="img">
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="btn-item-link" aria-label="Download from play store">
-                  <img src="./assets/images/play-store.png" width="185" height="69" alt="play store" class="img">
-                </a>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="769" height="804" alt="hero banner" class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURES
-      -->
-
-      <section class="section features" id="features" aria-label="features">
-        <div class="container">
-
-          <p class="section-subtitle">Our App Feature</p>
-
-          <h2 class="h2 section-title">Awesome Features</h2>
-
-          <ul class="features-list">
-
-            <li class="features-item">
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h3 card-title">Easy to Edit</h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit cons ectetur adipiscing
-                </p>
-
-              </div>
-            </li>
-
-            <li class="features-item">
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h3 card-title">Fully Secure</h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit cons ectetur adipiscing
-                </p>
-
-              </div>
-            </li>
-
-            <li class="features-item">
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h3 card-title">Manage User</h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit cons ectetur adipiscing
-                </p>
-
-              </div>
-            </li>
-
-            <li class="features-item">
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h3 card-title">Free Trial</h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit cons ectetur adipiscing
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="1262" height="1357" loading="lazy" alt="about banner"
-              class="w-100">
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">Our Acquaintance</p>
-
-            <h2 class="h2 section-title">We Are Trusted By Thousands Of People</h2>
-
-            <p class="section-text">
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
-              pulvinar
-              dapibus leo. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullam
-              corpe
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-
-                <div class="item-icon">
-                  <ion-icon name="folder" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 item-title">Device Quality Design</h3>
-
-                  <p class="item-text">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit Lorem ipsum dolor sit amet, consec tetur
-                    adipiscing elit.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="about-item">
-
-                <div class="item-icon">
-                  <ion-icon name="pie-chart" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 item-title">Easy to Manage Data</h3>
-
-                  <p class="item-text">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit Lorem ipsum dolor sit amet, consec tetur
-                    adipiscing elit.
-                  </p>
-                </div>
-
-              </li>
-
-            </ul>
-
-            <a href="#" class="btn btn-secondary">Discover More</a>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT 2
-      -->
-
-      <section class="section about-2" aria-label="about">
-        <div class="container">
-
-          <div class="about-content">
-
-            <p class="section-subtitle">Cool & Amazing Design</p>
-
-            <h2 class="h2 section-title">We Develop Amazing App For Startups</h2>
-
-            <p class="section-text">
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
-              pulvinar
-              dapibus leo. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullam
-              corper.
-            </p>
-
-            <p class="section-text">
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
-              pulvinar
-              dapibus leo. Lorem ipsum dolor.
-            </p>
-
-            <a href="#" class="btn btn-secondary">Discover More</a>
-
-          </div>
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner-2.png" width="1146" height="1226" loading="lazy" alt="about banner"
-              class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #APP
-      -->
-
-      <section class="section app" aria-label="app" id="app">
-        <div class="container">
-
-          <figure class="app-banner">
-            <img src="./assets/images/app.png" width="449" height="608" loading="lazy" alt="app banner" class="w-100">
-          </figure>
-
-          <div class="app-content">
-
-            <p class="section-subtitle">Download Our App</p>
-
-            <h2 class="h2 section-title">Get The App For Free And Start Now</h2>
-
-            <p class="section-text">
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
-              pulvinar
-              dapibus leo. Lorem ipsum dolor sit amet con Lorem ipsum dolor
-            </p>
-
-            <ul class="btn-list">
-
-              <li>
-                <a href="#" class="btn-item-link" aria-label="Download from app store">
-                  <img src="./assets/images/app-store.png" width="185" height="69" alt="app store" class="img">
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="btn-item-link" aria-label="Download from play store">
-                  <img src="./assets/images/play-store.png" width="185" height="69" alt="play store" class="img">
-                </a>
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" id="blog" aria-label="blog">
-        <div class="container">
-
-          <p class="section-subtitle">Recent Blogs</p>
-
-          <h2 class="h2 section-title">Our Tips And Latest News</h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
-                  <img src="./assets/images/blog-1.jpg" width="768" height="558" loading="lazy"
-                    alt="Build A Full Web Chat App From Our Scratch" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-05-22">May 22,2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">2 Comment</p>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Build A Full Web Chat App From Our Scratch</a>
-                  </h3>
-
-                  <a href="#" class="btn btn-outline">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
-                  <img src="./assets/images/blog-2.jpg" width="768" height="558" loading="lazy"
-                    alt="Brush Strokes Energize Trees In Paintings" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-05-22">May 22,2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">2 Comment</p>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Brush Strokes Energize Trees In Paintings</a>
-                  </h3>
-
-                  <a href="#" class="btn btn-outline">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
-                  <img src="./assets/images/blog-3.jpg" width="768" height="558" loading="lazy"
-                    alt="Insights on How to Improve Your Teaching." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-05-22">May 22,2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">2 Comment</p>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Insights on How to Improve Your Teaching.</a>
-                  </h3>
-
-                  <a href="#" class="btn btn-outline">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
-    <div class="section footer-top">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">VAST</a>
-
-          <p class="section-text">
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla utimp erdiet commodo diam libero vitae nibh
-            et jus cursus
-            id rutrum lore imperdiet ut sem vitae risus tristique posuere
-          </p>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-google"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Company</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Core Services</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Our Team</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Pricing Plan</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Useful Links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">App Download</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">How It Works</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Get In Touch</p>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-            <a href="tel:+12023459999" class="item-link">+12023459999</a>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-            <a href="mailto:supportvast@gmail.com" class="item-link">supportvast@gmail.com</a>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
-
-            <address class="item-link address">
-              3004 3 rd Ln,<br>
-              Los Angeles, Calnia, 11
-            </address>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>.
-        </p>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
